@@ -1,0 +1,225 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ .skill_div {
+	font-size: 20px;
+	font-family: initial;
+}
+
+.skill_div  label {
+	margin-left: 5px;
+}
+
+/* analog clock css work */
+
+
+.card-body.analog_clock {
+	height: 390px;
+	width: 390px;
+	border: 10px solid black;
+	border-radius: 50%;
+	box-shadow: 0px 0px 40px 11px black;
+    background: url(image/clock.jpg);
+	background-size: cover;
+	background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-body.analog_clock::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: #b3aaaa;
+    border-radius: 50%;
+    border: 1px solid gold;
+}
+
+.s {
+	position: relative;
+	height: 200px;
+	transform: rotate(0deg);
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    
+}
+
+.s::before {
+	content: " ";
+	position: absolute;
+	background: url(image/s.kata.png) no-repeat;
+	height: 151px;
+	background-position: center;
+	background-size: contain;
+    width: 10px;
+
+}
+.m {
+	position: relative;
+	height: 200px;
+	transform: rotate(30deg);
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    
+}
+
+.m::before {
+	content: " ";
+	position: absolute;
+	background: url(image/m.kata.png) no-repeat;
+	height: 151px;
+	background-position: center;
+	background-size: contain;
+    width: 10px;
+
+}
+.h {
+	position: relative;
+	height: 200px;
+	transform: rotate(60deg);
+    display: flex;
+    width: 0px;
+    justify-content: center;
+
+    
+}
+
+.h::before {
+	content: " ";
+	position: absolute;
+	background: url(image/h.kata.png) no-repeat;
+	height: 151px;
+	background-position: center;
+	background-size: contain;
+    width: 10px;
+}
+/* Analog + Digital */
+
+.s2 {
+	position: relative;
+	height: 200px;
+	transform: rotate(0deg);
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    
+}
+
+.s2::before {
+	content: " ";
+	position: absolute;
+	background: url(image/s.kata2.png) no-repeat;
+	height: 135px;
+	background-position: center;
+	background-size: contain;
+	width: 20px;
+}
+.m2 {
+	position: relative;
+	height: 200px;
+	transform: rotate(30deg);
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    
+}
+
+.m2::before {
+	content: " ";
+	position: absolute;
+	background: url(image/m.kata2.png) no-repeat;
+	height: 116px;
+	background-position: center;
+	background-size: contain;
+	width: 20px;
+}
+
+.h2 {
+	position: relative;
+	height: 183px;
+	transform: rotate(60deg);
+	display: flex;
+	width: 0px;
+	justify-content: center;
+}
+
+.h2::before {
+	content: " ";
+	position: absolute;
+	background: url(image/h.kata2.png) no-repeat;
+	height: 117px;
+	background-position: center;
+	background-size: contain;
+	width: 24px;
+	right: -12px;
+}
+.date {
+	position: absolute;
+	width: 55px;
+	height: 20px;
+	background: #4f4f4f;
+	left: 25%;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.year {
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background: #4f4f4f;
+	right: 25%;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+
+/* Calculator css work */
+
+.cal_sec button {
+	width: 25%;
+}
+
+.display {
+	background: #282727cf;
+	margin-bottom: 50px;
+	color: #dfdfdf;
+	padding: 6px;
+	min-height: 72px;
+}
+
+.card-body.cal_sec {
+	background: black;
+	border: 5px solid black;
+	position: relative;
+	border-radius: 5px;
+}
+
+.dis_1.text-right {
+	font-size: 20px;
+	margin: 0;
+}
+.dis_2.text-right {
+	font-size: 30px;
+	margin: 0;
+}
+
+
+.cal_sec hr {
+	background: white;
+	height: 6px !important;
+	opacity: 100;
+	position: absolute;
+	top: 91px;
+	left: 1%;
+	width: 98%;
+}

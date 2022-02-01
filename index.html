@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="slyle.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="titel text-center alert alert-success text-uppercase">Select Your skill</h2>
+          <div class="card">
+            <div class="card-body skill_div">
+              <input id="Laravel" value="Laravel" type="checkbox" class="skill"><label for="Laravel"> Laravel</label><br>
+              <input id="Python" value="Python" type="checkbox" class="skill"><label for="Python"> Python</label><br>
+              <input id="PHP" value="PHP" type="checkbox" class="skill"><label for="PHP"> PHP</label><br>
+              <input id="JavaScript" value="JavaScript" type="checkbox" class="skill"><label for="JavaScript"> JavaScript</label><br>
+              <input id="Golang" value="Golang" type="checkbox" class="skill"><label for="Golang"> Golang</label><br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="titel text-center alert alert-success text-uppercase">quick skill show</h2>
+          <div class="card">
+            <div class="card-body ">
+              <ul class="list-group out_skill">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="titel text-center alert alert-success text-uppercase">analog clock</h2>
+          <div class="card">
+            <div class="card-body analog_clock">
+              <div class="h"></div>
+              <div class="m"></div>
+              <div class="s"></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="titel text-center alert alert-success text-uppercase">analog clock + Digital</h2>
+          <div class="card">
+            <div class="card-body analog_clock">
+              <div class="date"></div>
+              <div class="year"></div>
+              <div class="h2"></div>
+              <div class="m2"></div>
+              <div class="s2"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body cal_sec">
+                <div class="buttons">
+                      <div class="display">
+                        <h2 class="dis_1 text-right"></h2>
+                        <h2 class="dis_2 text-right"></h2>
+                      </div>
+                      <hr>
+                  <div class="row ">
+                    <button class="w-50" onClick="alldelete()">AC</button>
+                    <button class="w-50" onClick="onedelete()">C</button>
+
+                  </div>
+                  <div class="row">
+                    <button   onClick="calcNumberss(7)">7</button>
+                    <button   onClick="calcNumberss(8)">8</button>
+                    <button   onClick="calcNumberss(9)">9</button>
+                    <button   onClick="calcNumberss('+')">+</button>
+                  </div>
+                  
+                  <div class="row">
+                    <button   onClick="calcNumberss(4)">4</button>
+                    <button   onClick="calcNumberss(5)">5</button>
+                    <button   onClick="calcNumberss(6)">6</button>
+                    <button   onClick="calcNumberss('-')">-</button>
+                  </div>
+                  
+                  <div class="row">
+                    <button   onClick="calcNumberss(1)">1</button>
+                    <button   onClick="calcNumberss(2)">2</button>
+                    <button   onClick="calcNumberss(3)">3</button>
+                    <button   onClick="calcNumberss('*')">*</button>
+                  </div>
+                  
+                  <div class="row">
+                    <button   onClick="calcNumberss(0)">0</button>
+                    <button   onClick="calcNumberss('.')">.</button>
+                    <button   onClick="calcNumberss('/')">/</button>
+                    <button   onClick="calResult()">=</button>
+                  </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/quick_skill.js"></script>
+    <script src="js/analog.js"></script>
+    <script src="js/analog_digital.js"></script>
+    <script src="js/calculator.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
+
